@@ -1,0 +1,11 @@
+# скачиваем ngrok
+sudo snap install ngrok
+# пройти регистрацию на сайте ngrok и получить собственный токен
+ngrok config add-authtoken 29R8V4ZUC2LZSXiqV5nx2W9kZyT_3kXCpwT2U89web7uctE7c
+#создание html файла
+touch server.html
+mousepad server.html
+#запуск
+python3 -m http.server
+#подключение
+ngrok http 8000
